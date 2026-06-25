@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class SumOfOdd {
+     public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter size:");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        int sum = 0;
+        int odd=0;
+        System.out.println("Enter an elements:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+
+            if (arr[i] % 2!= 0) {
+                odd++;
+                sum=sum+arr[i];
+            } 
+        }
+        System.out.println("odd numbers: " + sum);
+    }
+}
